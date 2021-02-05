@@ -48,18 +48,6 @@
                                             href="PSL/kontaktai.html">Kontaktai</a>
                                     </li>
                                 </ul>
-                                <div class="boxContainer mx-2">
-                                    <table class="elementsContainer">
-                                        <tr>
-                                            <td>
-                                                <input type="text" placeholder="Paieška" class="search">
-                                            </td>
-                                            <td>
-                                                <a href="#"><i class="fas fa-search btn btn-outline-light"></i></a>
-                                            </td>
-                                        </tr>
-                                    </table>
-                                </div>
                                 <div class="d-flex">
                                     <div class="container">
                                         <!-- Button to Open the Modal -->
@@ -121,7 +109,21 @@
                         <option value="3">Three</option>
                     </select>
                 </div>
-                <div class="card col-3 m-2">
+                <!-- Search bar -->
+                <div class="boxContainer mx-2 justify-content-end d-flex">
+                    <table class="elementsContainer">
+                        <tr>
+                            <td>
+                                <input type="text" placeholder="Paieška" id="input">
+                            </td>
+                            <td>
+                                <button onclick="search()" class="btn btn-secondary btn-sm"><i
+                                        class="fas fa-search"></i></button>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="card col-3 m-2 Car">
                     <img src="IMG/9.jpeg" class="card-img-top" alt="car1">
                     <div class="card-body">
                         <h5 class="card-title">Jeep</h5>
@@ -150,7 +152,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="card col-3 m-2">
+                <div class="card col-3 m-2 Car">
                     <img src="IMG/5.jpeg" class="card-img-top" alt="car2">
                     <div class="card-body">
                         <h5 class="card-title">Chevrolet</h5>
@@ -181,7 +183,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="card col-3 m-2">
+                <div class="card col-3 m-2 Car">
                     <img src="IMG/6.jpeg" class="card-img-top" alt="car3">
                     <div class="card-body">
                         <h5 class="card-title">Mercedes</h5>
@@ -211,7 +213,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="card col-3 m-2">
+                <div class="card col-3 m-2 Car">
                     <img src="IMG/8.jpeg" class="card-img-top" alt="car4">
                     <div class="card-body">
                         <h5 class="card-title">Mercedes hečbekas</h5>
@@ -240,7 +242,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="card col-3 m-2">
+                <div class="card col-3 m-2 Car">
                     <img src="IMG/7.jpeg" class="card-img-top" alt="car5">
                     <div class="card-body">
                         <h5 class="card-title">Audi</h5>
@@ -271,7 +273,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="card col-3 m-2">
+                <div class="card col-3 m-2 Car">
                     <img src="IMG/2.jpg" class="card-img-top" alt="car6">
                     <div class="card-body">
                         <h5 class="card-title">Suzuki</h5>
@@ -398,6 +400,8 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- JS -->
+    <script src="JS/search.js"></script>
 
 
 </body>

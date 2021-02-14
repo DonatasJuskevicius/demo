@@ -7,12 +7,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
     <script src="https://kit.fontawesome.com/095167dc24.js" crossorigin="anonymous"></script>
     <title>Autonuoma!</title>
 </head>
-
 <body>
     <header>
         <div class="container-fluid">
@@ -24,60 +22,67 @@
                             <a class="navbar-brand fw-bold" href="index.html">
                                 <h1>CAR<span class="text-success">BOOK</span></h1>
                             </a>
-                            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                                aria-expanded="false" aria-label="Toggle navigation">
+                            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                                 <span class="navbar-toggler-icon"></span>
                             </button>
                             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                                     <li class="nav-item">
-                                        <a class="nav-link text-white font-weight-bold active" aria-current="page"
-                                            href="index.html">Pagrindinis</a>
+                                        <a class="nav-link text-white font-weight-bold active" aria-current="page" href="index.html">Pagrindinis</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link text-white font-weight-bold"
-                                            href="PSL/paslaugos.html">Paslaugos</a>
+                                        <a class="nav-link text-white font-weight-bold" href="PSL/paslaugos.html">Paslaugos</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link text-white font-weight-bold"
-                                            href="PSL/versloklientams.html">Verslo Klientams</a>
+                                        <a class="nav-link text-white font-weight-bold" href="PSL/versloklientams.html">Verslo Klientams</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link text-white font-weight-bold"
-                                            href="PSL/kontaktai.html">Kontaktai</a>
+                                        <a class="nav-link text-white font-weight-bold" href="PSL/kontaktai.html">Kontaktai</a>
                                     </li>
                                 </ul>
                                 <div class="d-flex">
                                     <div class="container">
                                         <!-- Button to Open the Modal -->
-                                        <button type="button" class="btn btn-outline-success" data-toggle="modal"
-                                            data-target="#myModal">Prisijungti</button>
+                                        <button type="button" class="btn btn-outline-success" data-toggle="modal" data-target="#myModal">Prisijungti</button>
                                         <!-- The Modal -->
                                         <div class="modal" id="myModal">
                                             <div class="modal-dialog">
                                                 <div class="modal-content">
                                                     <!-- Modal body -->
                                                     <div class="modal-body">
-                                                        <form>
+                                                       <form class="text-dark">
                                                             <div class="form-group">
                                                                 <label for="email">Email address:</label>
-                                                                <input type="email" class="form-control"
-                                                                    placeholder="Enter email" id="email">
+                                                                <input type="email" class="form-control" placeholder="Enter email" id="email">
                                                             </div>
                                                             <div class="form-group">
                                                                 <label for="pwd">Password:</label>
-                                                                <input type="password" class="form-control"
-                                                                    placeholder="Enter password" id="pwd">
+                                                                <input type="password" class="form-control" placeholder="Enter password" id="pwd">
                                                             </div>
-                                                            <div class="form-group form-check">
-                                                                <label class="form-check-label">
-                                                                    <input class="form-check-input" type="checkbox">
-                                                                    Remember me
-                                                                </label>
+                                                                <div class="form-check m-1">
+                                                                    <input class="form-check-input" type="checkbox" value="" id="form2Example3" checked />
+                                                                    <label class="form-check-label" for="form2Example3"> Remember me </label>
+                                                                </div>
+                                                            <button type="submit" class="btn btn-outline-success" data-dismiss="modal">Prisijungti</button>
+                                                            <div class="text-center">
+                                                                <p>Not a member? <a href="#">Register</a></p>
+                                                                <p>or sign up with:</p>
+                                                                <button type="button" class="btn btn-success btn-floating mx-1">
+                                                                    <i class="fab fa-facebook-f"></i>
+                                                                </button>
+
+                                                                <button type="button" class="btn btn-success btn-floating mx-1">
+                                                                    <i class="fab fa-google"></i>
+                                                                </button>
+
+                                                                <button type="button" class="btn btn-success btn-floating mx-1">
+                                                                    <i class="fab fa-twitter"></i>
+                                                                </button>
+
+                                                                <button type="button" class="btn btn-success btn-floating mx-1">
+                                                                    <i class="fab fa-github"></i>
+                                                                </button>
                                                             </div>
-                                                            <button type="submit" class="btn btn-outline-success"
-                                                                data-dismiss="modal">Prisijungti</button>
                                                         </form>
                                                     </div>
                                                 </div>
@@ -117,8 +122,7 @@
                                 <input type="text" placeholder="Paieška" id="input">
                             </td>
                             <td>
-                                <button onclick="search()" class="btn btn-secondary btn-sm"><i
-                                        class="fas fa-search"></i></button>
+                                <button onclick="search()" class="btn btn-secondary btn-sm"><i class="fas fa-search"></i></button>
                             </td>
                         </tr>
                     </table>
@@ -128,8 +132,7 @@
                     <div class="card-body">
                         <h5 class="card-title">Jeep</h5>
                         <p class="card-text">5-vietis, kuras - benzinas, pavarų dėžė - mechaninė, kaina - 50EUR/para</p>
-                        <a href="#" class="btn btn-primary m-2">Book now</a><button class="btn btn-success m-2"
-                            data-toggle="modal" data-target="#myModal1">Details</button>
+                        <a href="#" class="btn btn-primary m-2">Book now</a><button class="btn btn-success m-2" data-toggle="modal" data-target="#myModal1">Details</button>
                         <!-- The Modal -->
                         <div class="modal" id="myModal1">
                             <div class="modal-dialog">
@@ -144,8 +147,7 @@
                                     </div>
                                     <!-- Modal footer -->
                                     <div class="modal-footer">
-                                        <button type="button" class="btn btn-success"
-                                            data-dismiss="modal">Close</button>
+                                        <button type="button" class="btn btn-success" data-dismiss="modal">Close</button>
                                     </div>
                                 </div>
                             </div>
@@ -158,8 +160,7 @@
                         <h5 class="card-title">Chevrolet</h5>
                         <p class="card-text">2-vietis, kuras - benzinas, pavarų dėžė - automatinė, cabrio klasės, kaina
                             - 100EUR/para</p>
-                        <a href="#" class="btn btn-primary m-2">Book now</a><button class="btn btn-success m-2"
-                            data-toggle="modal" data-target="#myModal2">Details</button>
+                        <a href="#" class="btn btn-primary m-2">Book now</a><button class="btn btn-success m-2" data-toggle="modal" data-target="#myModal2">Details</button>
                         <!-- The Modal -->
                         <div class="modal" id="myModal2">
                             <div class="modal-dialog">
@@ -175,8 +176,7 @@
                                     </div>
                                     <!-- Modal footer -->
                                     <div class="modal-footer">
-                                        <button type="button" class="btn btn-success"
-                                            data-dismiss="modal">Close</button>
+                                        <button type="button" class="btn btn-success" data-dismiss="modal">Close</button>
                                     </div>
                                 </div>
                             </div>
@@ -189,8 +189,7 @@
                         <h5 class="card-title">Mercedes</h5>
                         <p class="card-text">2-vietis, kuras - benzinas, pavarų dėžė - automatinė, kaina -750EUR/para
                         </p>
-                        <a href="#" class="btn btn-primary m-2">Book now</a><button class="btn btn-success m-2"
-                            data-toggle="modal" data-target="#myModal3">Details</button>
+                        <a href="#" class="btn btn-primary m-2">Book now</a><button class="btn btn-success m-2" data-toggle="modal" data-target="#myModal3">Details</button>
                         <!-- The Modal -->
                         <div class="modal" id="myModal3">
                             <div class="modal-dialog">
@@ -205,8 +204,7 @@
                                     </div>
                                     <!-- Modal footer -->
                                     <div class="modal-footer">
-                                        <button type="button" class="btn btn-success"
-                                            data-dismiss="modal">Close</button>
+                                        <button type="button" class="btn btn-success" data-dismiss="modal">Close</button>
                                     </div>
                                 </div>
                             </div>
@@ -218,8 +216,7 @@
                     <div class="card-body">
                         <h5 class="card-title">Mercedes hečbekas</h5>
                         <p class="card-text">4-vietis, kuras - dyzelis, pavarų dėžė - mechaninė, kaina - 40EUR/para</p>
-                        <a href="#" class="btn btn-primary m-2">Book now</a><button class="btn btn-success m-2"
-                            data-toggle="modal" data-target="#myModal4">Details</button>
+                        <a href="#" class="btn btn-primary m-2">Book now</a><button class="btn btn-success m-2" data-toggle="modal" data-target="#myModal4">Details</button>
                         <!-- The Modal -->
                         <div class="modal" id="myModal4">
                             <div class="modal-dialog">
@@ -234,8 +231,7 @@
                                     </div>
                                     <!-- Modal footer -->
                                     <div class="modal-footer">
-                                        <button type="button" class="btn btn-success"
-                                            data-dismiss="modal">Close</button>
+                                        <button type="button" class="btn btn-success" data-dismiss="modal">Close</button>
                                     </div>
                                 </div>
                             </div>
@@ -248,8 +244,7 @@
                         <h5 class="card-title">Audi</h5>
                         <p class="card-text">5-vietis, kuras - benzinas, pavarų dėžė - automatinė, Sline, kaina -
                             60EUR/para</p>
-                        <a href="#" class="btn btn-primary m-2">Book now</a><button class="btn btn-success m-2"
-                            data-toggle="modal" data-target="#myModal5">Details</button>
+                        <a href="#" class="btn btn-primary m-2">Book now</a><button class="btn btn-success m-2" data-toggle="modal" data-target="#myModal5">Details</button>
                         <!-- The Modal -->
                         <div class="modal" id="myModal5">
                             <div class="modal-dialog">
@@ -265,8 +260,7 @@
                                     </div>
                                     <!-- Modal footer -->
                                     <div class="modal-footer">
-                                        <button type="button" class="btn btn-success"
-                                            data-dismiss="modal">Close</button>
+                                        <button type="button" class="btn btn-success" data-dismiss="modal">Close</button>
                                     </div>
                                 </div>
                             </div>
@@ -279,8 +273,7 @@
                         <h5 class="card-title">Land Rover</h5>
                         <p class="card-text">7-vietis, kuras - benzinas, pavarų dėžė - automatinė, kaina -
                             65EUR/para</p>
-                        <a href="#" class="btn btn-primary m-2">Book now</a><button class="btn btn-success m-2"
-                            data-toggle="modal" data-target="#myModal6">Details</button>
+                        <a href="#" class="btn btn-primary m-2">Book now</a><button class="btn btn-success m-2" data-toggle="modal" data-target="#myModal6">Details</button>
                         <!-- The Modal -->
                         <div class="modal" id="myModal6">
                             <div class="modal-dialog">
@@ -296,8 +289,7 @@
                                     </div>
                                     <!-- Modal footer -->
                                     <div class="modal-footer">
-                                        <button type="button" class="btn btn-success"
-                                            data-dismiss="modal">Close</button>
+                                        <button type="button" class="btn btn-success" data-dismiss="modal">Close</button>
                                     </div>
                                 </div>
                             </div>
@@ -309,9 +301,8 @@
                     <div class="card-body">
                         <h5 class="card-title">Audi</h5>
                         <p class="card-text">7-vietis, kuras - benzinas, pavarų dėžė - automatinė, visureigis, kaina -
-                        80 EUR/para</p>
-                        <a href="#" class="btn btn-primary m-2">Book now</a><button class="btn btn-success m-2"
-                            data-toggle="modal" data-target="#myModal7">Details</button>
+                            80 EUR/para</p>
+                        <a href="#" class="btn btn-primary m-2">Book now</a><button class="btn btn-success m-2" data-toggle="modal" data-target="#myModal7">Details</button>
                         <!-- The Modal -->
                         <div class="modal" id="myModal7">
                             <div class="modal-dialog">
@@ -327,8 +318,7 @@
                                     </div>
                                     <!-- Modal footer -->
                                     <div class="modal-footer">
-                                        <button type="button" class="btn btn-success"
-                                            data-dismiss="modal">Close</button>
+                                        <button type="button" class="btn btn-success" data-dismiss="modal">Close</button>
                                     </div>
                                 </div>
                             </div>
@@ -341,8 +331,7 @@
                         <h5 class="card-title">Tesla</h5>
                         <p class="card-text">5-vietis, kuras - elektra, pavarų dėžė - automatinė, kaina -
                             100EUR/para</p>
-                        <a href="#" class="btn btn-primary m-2">Book now</a><button class="btn btn-success m-2"
-                            data-toggle="modal" data-target="#myModal8">Details</button>
+                        <a href="#" class="btn btn-primary m-2">Book now</a><button class="btn btn-success m-2" data-toggle="modal" data-target="#myModal8">Details</button>
                         <!-- The Modal -->
                         <div class="modal" id="myModal8">
                             <div class="modal-dialog">
@@ -358,8 +347,7 @@
                                     </div>
                                     <!-- Modal footer -->
                                     <div class="modal-footer">
-                                        <button type="button" class="btn btn-success"
-                                            data-dismiss="modal">Close</button>
+                                        <button type="button" class="btn btn-success" data-dismiss="modal">Close</button>
                                     </div>
                                 </div>
                             </div>
@@ -372,8 +360,7 @@
                         <h5 class="card-title">Audi A6</h5>
                         <p class="card-text">5-vietis, kuras - benzinas, pavarų dėžė - automatinė, Sline, kaina -
                             60EUR/para</p>
-                        <a href="#" class="btn btn-primary m-2">Book now</a><button class="btn btn-success m-2"
-                            data-toggle="modal" data-target="#myModal9">Details</button>
+                        <a href="#" class="btn btn-primary m-2">Book now</a><button class="btn btn-success m-2" data-toggle="modal" data-target="#myModal9">Details</button>
                         <!-- The Modal -->
                         <div class="modal" id="myModal9">
                             <div class="modal-dialog">
@@ -389,8 +376,7 @@
                                     </div>
                                     <!-- Modal footer -->
                                     <div class="modal-footer">
-                                        <button type="button" class="btn btn-success"
-                                            data-dismiss="modal">Close</button>
+                                        <button type="button" class="btn btn-success" data-dismiss="modal">Close</button>
                                     </div>
                                 </div>
                             </div>
@@ -401,10 +387,9 @@
                     <img src="IMG/14.jpg" class="card-img-top" alt="car14">
                     <div class="card-body">
                         <h5 class="card-title">BMW 535</h5>
-                        <p class="card-text">5-vietis, kuras - benzinas, pavarų dėžė - automatinė,  kaina -
+                        <p class="card-text">5-vietis, kuras - benzinas, pavarų dėžė - automatinė, kaina -
                             80EUR/para</p>
-                        <a href="#" class="btn btn-primary m-2">Book now</a><button class="btn btn-success m-2"
-                            data-toggle="modal" data-target="#myModal10">Details</button>
+                        <a href="#" class="btn btn-primary m-2">Book now</a><button class="btn btn-success m-2" data-toggle="modal" data-target="#myModal10">Details</button>
                         <!-- The Modal -->
                         <div class="modal" id="myModal10">
                             <div class="modal-dialog">
@@ -415,13 +400,12 @@
                                     </div>
                                     <!-- Modal body -->
                                     <div class="modal-body">
-                                        <p>5-vietis, kuras - benzinas, pavarų dėžė - automatinė,  kaina -
+                                        <p>5-vietis, kuras - benzinas, pavarų dėžė - automatinė, kaina -
                                             80EUR/para</p>
                                     </div>
                                     <!-- Modal footer -->
                                     <div class="modal-footer">
-                                        <button type="button" class="btn btn-success"
-                                            data-dismiss="modal">Close</button>
+                                        <button type="button" class="btn btn-success" data-dismiss="modal">Close</button>
                                     </div>
                                 </div>
                             </div>
@@ -432,10 +416,9 @@
                     <img src="IMG/15.jpg" class="card-img-top" alt="car15">
                     <div class="card-body">
                         <h5 class="card-title">BMW X5</h5>
-                        <p class="card-text">5-vietis, kuras - benzinas, pavarų dėžė - automatinė,  kaina -
+                        <p class="card-text">5-vietis, kuras - benzinas, pavarų dėžė - automatinė, kaina -
                             90EUR/para</p>
-                        <a href="#" class="btn btn-primary m-2">Book now</a><button class="btn btn-success m-2"
-                            data-toggle="modal" data-target="#myModal11">Details</button>
+                        <a href="#" class="btn btn-primary m-2">Book now</a><button class="btn btn-success m-2" data-toggle="modal" data-target="#myModal11">Details</button>
                         <!-- The Modal -->
                         <div class="modal" id="myModal11">
                             <div class="modal-dialog">
@@ -451,8 +434,7 @@
                                     </div>
                                     <!-- Modal footer -->
                                     <div class="modal-footer">
-                                        <button type="button" class="btn btn-success"
-                                            data-dismiss="modal">Close</button>
+                                        <button type="button" class="btn btn-success" data-dismiss="modal">Close</button>
                                     </div>
                                 </div>
                             </div>
@@ -463,10 +445,9 @@
                     <img src="IMG/16.jpg" class="card-img-top" alt="car16">
                     <div class="card-body">
                         <h5 class="card-title">BMW 335</h5>
-                        <p class="card-text">5-vietis, kuras - benzinas, pavarų dėžė - automatinė,  kaina -
+                        <p class="card-text">5-vietis, kuras - benzinas, pavarų dėžė - automatinė, kaina -
                             70EUR/para</p>
-                        <a href="#" class="btn btn-primary m-2">Book now</a><button class="btn btn-success m-2"
-                            data-toggle="modal" data-target="#myModal12">Details</button>
+                        <a href="#" class="btn btn-primary m-2">Book now</a><button class="btn btn-success m-2" data-toggle="modal" data-target="#myModal12">Details</button>
                         <!-- The Modal -->
                         <div class="modal" id="myModal12">
                             <div class="modal-dialog">
@@ -482,8 +463,7 @@
                                     </div>
                                     <!-- Modal footer -->
                                     <div class="modal-footer">
-                                        <button type="button" class="btn btn-success"
-                                            data-dismiss="modal">Close</button>
+                                        <button type="button" class="btn btn-success" data-dismiss="modal">Close</button>
                                     </div>
                                 </div>
                             </div>
@@ -496,8 +476,7 @@
                         <h5 class="card-title">Lexus</h5>
                         <p class="card-text">5-vietis, kuras - benzinas, pavarų dėžė - automatinė, kaina -
                             60EUR/para</p>
-                        <a href="#" class="btn btn-primary m-2">Book now</a><button class="btn btn-success m-2"
-                            data-toggle="modal" data-target="#myModal13">Details</button>
+                        <a href="#" class="btn btn-primary m-2">Book now</a><button class="btn btn-success m-2" data-toggle="modal" data-target="#myModal13">Details</button>
                         <!-- The Modal -->
                         <div class="modal" id="myModal13">
                             <div class="modal-dialog">
@@ -513,8 +492,7 @@
                                     </div>
                                     <!-- Modal footer -->
                                     <div class="modal-footer">
-                                        <button type="button" class="btn btn-success"
-                                            data-dismiss="modal">Close</button>
+                                        <button type="button" class="btn btn-success" data-dismiss="modal">Close</button>
                                     </div>
                                 </div>
                             </div>
@@ -527,8 +505,7 @@
                         <h5 class="card-title">Maserati</h5>
                         <p class="card-text">5-vietis, kuras - benzinas, pavarų dėžė - automatinė, kaina -
                             60EUR/para</p>
-                        <a href="#" class="btn btn-primary m-2">Book now</a><button class="btn btn-success m-2"
-                            data-toggle="modal" data-target="#myModal14">Details</button>
+                        <a href="#" class="btn btn-primary m-2">Book now</a><button class="btn btn-success m-2" data-toggle="modal" data-target="#myModal14">Details</button>
                         <!-- The Modal -->
                         <div class="modal" id="myModal14">
                             <div class="modal-dialog">
@@ -544,8 +521,7 @@
                                     </div>
                                     <!-- Modal footer -->
                                     <div class="modal-footer">
-                                        <button type="button" class="btn btn-success"
-                                            data-dismiss="modal">Close</button>
+                                        <button type="button" class="btn btn-success" data-dismiss="modal">Close</button>
                                     </div>
                                 </div>
                             </div>
@@ -557,8 +533,7 @@
                     <div class="card-body">
                         <h5 class="card-title">Suzuki</h5>
                         <p class="card-text">5-vietis, kuras - benzinas, pavarų dėžė - mechaninė, kaina - 30EUR/para</p>
-                        <a href="#" class="btn btn-primary m-2">Book now</a><button class="btn btn-success m-2"
-                            data-toggle="modal" data-target="#myModal15">Details</button>
+                        <a href="#" class="btn btn-primary m-2">Book now</a><button class="btn btn-success m-2" data-toggle="modal" data-target="#myModal15">Details</button>
                         <!-- The Modal -->
                         <div class="modal" id="myModal15">
                             <div class="modal-dialog">
@@ -573,8 +548,7 @@
                                     </div>
                                     <!-- Modal footer -->
                                     <div class="modal-footer">
-                                        <button type="button" class="btn btn-success"
-                                            data-dismiss="modal">Close</button>
+                                        <button type="button" class="btn btn-success" data-dismiss="modal">Close</button>
                                     </div>
                                 </div>
                             </div>
@@ -595,16 +569,13 @@
                             there live the blind texts.</p>
                         <ul class="nav">
                             <li class="nav-item">
-                                <a class="nav-link text-white" href="https://lt-lt.facebook.com/"><i
-                                        class="fab fa-facebook-square"></i></a>
+                                <a class="nav-link text-white" href="https://lt-lt.facebook.com/"><i class="fab fa-facebook-square"></i></a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link text-white" href="https://www.linkedin.com/"><i
-                                        class="fab fa-linkedin"></i></a>
+                                <a class="nav-link text-white" href="https://www.linkedin.com/"><i class="fab fa-linkedin"></i></a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link text-white" href="https://www.instagram.com/"><i
-                                        class="fab fa-instagram"></i></a>
+                                <a class="nav-link text-white" href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
                             </li>
                         </ul>
                     </div>
@@ -654,27 +625,20 @@
                         <h3>Have a Questions?</h3>
                         <ul class="nav flex-column">
                             <li class="nav-item list-inline">
-                                <div class="list-inline-item"><a class="nav-link text-white font-weight-bold"
-                                        href="#"><i class="fas fa-map-marker-alt m-1"></i>203 Fake St. Mountain View,
+                                <div class="list-inline-item"><a class="nav-link text-white font-weight-bold" href="#"><i class="fas fa-map-marker-alt m-1"></i>203 Fake St. Mountain View,
                                         San Francisco, California, USA</a></div>
                             </li>
                             <li class="nav-item list-inline">
-                                <a class="nav-link text-white font-weight-bold" href="#"><i
-                                        class="fas fa-mobile-alt m-1"></i>+2 392 3929 210</a>
+                                <a class="nav-link text-white font-weight-bold" href="#"><i class="fas fa-mobile-alt m-1"></i>+2 392 3929 210</a>
                             </li>
                             <li class="nav-item list-inline">
-                                <a class="nav-link text-white font-weight-bold" href="#"><i
-                                        class="far fa-envelope m-1"></i> info@yourdomain.com</a>
+                                <a class="nav-link text-white font-weight-bold" href="#"><i class="far fa-envelope m-1"></i> info@yourdomain.com</a>
                             </li>
                         </ul>
                     </div>
                 </div>
-
             </div>
-
-
         </section>
-
     </footer>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
@@ -683,6 +647,4 @@
     <script src="JS/search.js"></script>
 
 
-</body>
-
-</html>
+</body></html>

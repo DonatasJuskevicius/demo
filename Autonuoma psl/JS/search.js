@@ -11,3 +11,16 @@ function search() {
     }
   })
 }
+jQuery('#selectContainer select').on('change', function() {
+  var cars = jQuery('#custom-select').val();
+ 
+  
+    jQuery('div.card').hide();
+    
+    jQuery('div.card').each(function() {
+      if(jQuery(this).hasClass(cars)){
+      jQuery(this).show();
+      }
+    });
+    
+  });

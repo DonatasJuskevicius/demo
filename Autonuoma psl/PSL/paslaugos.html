@@ -45,9 +45,56 @@
 
 
                                 </ul>
-                                <form class="d-flex">
-                                    <button class="btn btn-outline-success" type="submit">Prisijungti</button>
-                                </form>
+                                <div class="d-flex">
+                                    <div class="container">
+                                        <!-- Button to Open the Modal -->
+                                        <button type="button" class="btn btn-outline-success" data-toggle="modal" data-target="#myModal">Prisijungti</button>
+                                        <!-- The Modal -->
+                                        <div class="modal" id="myModal">
+                                            <div class="modal-dialog">
+                                                <div class="modal-content">
+                                                    <!-- Modal body -->
+                                                    <div class="modal-body">
+                                                        <form class="text-dark">
+                                                            <div class="form-group">
+                                                                <label for="email">Email address:</label>
+                                                                <input type="email" class="form-control" placeholder="Enter email" id="email">
+                                                            </div>
+                                                            <div class="form-group">
+                                                                <label for="pwd">Password:</label>
+                                                                <input type="password" class="form-control" placeholder="Enter password" id="pwd">
+                                                            </div>
+                                                            <div class="form-check m-1">
+                                                                <input class="form-check-input" type="checkbox" value="" id="form2Example3" checked />
+                                                                <label class="form-check-label" for="form2Example3"> Remember me </label>
+                                                            </div>
+                                                            <button type="submit" onclick="myFunction()" class="btn btn-outline-success" data-dismiss="modal">Prisijungti</button>
+                                                            <div class="text-center">
+                                                                <p>Not a member? <a href="#">Register</a></p>
+                                                                <p>or sign up with:</p>
+                                                                <button type="button" class="btn btn-success btn-floating mx-1">
+                                                                    <i class="fab fa-facebook-f"></i>
+                                                                </button>
+
+                                                                <button type="button" class="btn btn-success btn-floating mx-1">
+                                                                    <i class="fab fa-google"></i>
+                                                                </button>
+
+                                                                <button type="button" class="btn btn-success btn-floating mx-1">
+                                                                    <i class="fab fa-twitter"></i>
+                                                                </button>
+
+                                                                <button type="button" class="btn btn-success btn-floating mx-1">
+                                                                    <i class="fab fa-github"></i>
+                                                                </button>
+                                                            </div>
+                                                        </form>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </nav>
@@ -56,19 +103,19 @@
         </div>
     </header>
     <main>
-       <div class="jumbotron text-center" style="margin-bottom:0">
-                <h1 class="text-primary">PASLAUGOS</h1>
-                <h2>Mūsų teikiamos paslaugos</h2>
-            </div>
-            <section class="container">
+        <div class="jumbotron text-center" style="margin-bottom:0">
+            <h1 class="text-primary">PASLAUGOS</h1>
+            <h2>Mūsų teikiamos paslaugos</h2>
+        </div>
+        <section class="container">
             <div class="row justify-content-center m-2">
                 <div class="card col-3 m-3 text-center">
-                   <i class="fas fa-car fa-10x bg-primary rounded-3 text-white mt-2"></i>
+                    <i class="fas fa-car fa-10x bg-primary rounded-3 text-white mt-2"></i>
                     <!--<img src="../IMG/2.jpg" class="card-img-top rounded-circle" alt="car1">-->
                     <div class="card-body">
                         <h5 class="card-title">Automobilių nuoma</h5>
                         <p class="card-text">Mūsų įmonė teikia ilgalaikės ir trumpalaikės automobilių nuomos paslaugas visoje Lietuvoje. Savo klientams galime pasiūlyti platų automobilių asortimentą ir konkurencingas kainas.</p>
-                     
+
                     </div>
                 </div>
                 <div class="card col-3 m-3 text-center">
@@ -77,16 +124,16 @@
                     <div class="card-body">
                         <h5 class="card-title">Automobilių nuoma su vairuotoju</h5>
                         <p class="card-text">Savo klientams galime pasiūlyti išskirtinę paslaugą - automobilio nuoma kartu su vairuotoju. Mūsų visi vairuotojai turi ilgesnę nei 10-ies metų aktyvaus vairavimo patirtį, todėl kelionėje galėsite jaustis saugiai ir užtikrintai.</p>
-                      
+
                     </div>
                 </div>
                 <div class="card col-3 m-3 text-center">
-                   <i class="fas fa-car-crash fa-10x bg-primary rounded-3 text-center text-white mt-2"></i>
+                    <i class="fas fa-car-crash fa-10x bg-primary rounded-3 text-center text-white mt-2"></i>
                     <!--<img src="../IMG/4.jpg" class="card-img-top rounded-circle" alt="car3">-->
                     <div class="card-body">
                         <h5 class="card-title">Pagalba kelyje</h5>
                         <p class="card-text">Ištiko bėda kelyje? Ne problema, skambinkite mums Jau dabar ir mes ne tik atvyksime į Jūsų nurodytą vietą, bet galėsime Jums pasiūlyti automobilį, kol savo automobilį tvarkysite autoservise.</p>
-                       
+
                     </div>
                 </div>
                 <!-- <div class="card col-2 m-2">
@@ -100,7 +147,7 @@
             </div>
         </section>
     </main>
-     <footer>
+    <footer>
 
         <section class="container-fluid bg-dark p-3">
             <div class="container row justify-content-between">
@@ -140,29 +187,26 @@
                         </ul>
                     </div>
                 </div>
-               <div class="col-3 text-white">
+                <div class="col-3 text-white">
                     <div class="text-left">
-                        <h3>Services</h3>
+                        <h3>Paslaugos</h3>
                         <ul class="nav flex-column">
                             <li class="nav-item">
-                                <a class="nav-link text-white font-weight-bold" href="../index.html">Pagrindinis</a>
+                                <a class="nav-link text-white font-weight-bold" href="paslaugos.html">Automobilių nuoma</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link text-white font-weight-bold" href="paslaugos.html">Paslaugos</a>
+                                <a class="nav-link text-white font-weight-bold" href="paslaugos.html">Nuoma su vairuotoju</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link text-white font-weight-bold" href="../PSL/versloklientams.html">Verslo
-                                    Klientams</a>
+                                <a class="nav-link text-white font-weight-bold" href="paslaugos.html">Pagalba kelyje</a>
                             </li>
-                            <li class="nav-item">
-                                <a class="nav-link text-white font-weight-bold" href="../PSL/kontaktai.html">Kontaktai</a>
-                            </li>
+
                         </ul>
                     </div>
                 </div>
                 <div class="col-3 text-white">
                     <div class="text-left">
-                        <h3>Have a Questions?</h3>
+                        <h3>Susisiekite</h3>
                         <ul class="nav flex-column">
                             <li class="nav-item list-inline">
                                 <div class="list-inline-item"><a class="nav-link text-white font-weight-bold" href="#"><i class="fas fa-map-marker-alt m-1"></i>203 Fake St. Mountain View, San Francisco, California, USA</a></div>
@@ -187,13 +231,18 @@
     <!-- Optional JavaScript; choose one of the two! -->
 
     <!-- Option 1: Bootstrap Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
-
+    <!--  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        function myFunction() {
+            alert("Jūs prisijungėte");
+        }
+    </script>
     <!-- Option 2: Separate Popper and Bootstrap JS -->
     <!--
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous"></script>
     -->
-</body>
-
-</html>
+</body></html>
